@@ -101,7 +101,7 @@ username: admin
 password: BadPass#1
 ----
 
-. <TODO>[Slidedeck]
+. https://github.com/vsellappa/cdpdcsdx/blob/master/Lab101/slides/CDPDc_SDX_Lab101_Workshop_ToShare.pdf[Presentation Deck]
 
 === Lab 101
 . Open Zeppelin and login as joe_analyst. Find his notebook by searching for _worldwide_ using the text field under ‘Notebook’ section. Select the notebook called:  *Worldwide Bank - Joe Analyst*
@@ -110,6 +110,6 @@ image:lab101_zeppelin_search.png[]
 . On the first launch of the notebook, you will be prompted to choose interpreters. You can keep the defaults but make sure you click Save button.
 image:lab101_zeppelin_interpreters.png[]
 
-. The lab consists of self-explanatory Zeppelin notebooks. This <TODO>[Slidedeck] shows the lab walkthru.
+. Use https://github.com/vsellappa/cdpdcsdx/blob/master/Lab101/slides/CDPDc_SDX_Lab101_Walkthru.pdf[this] as the handy guide to walk thru the labs.
 
 
