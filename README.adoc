@@ -1,0 +1,115 @@
+= CDP SDX Workshop
+venky@cloudera.com
+v0.1, Jan 25, 2020: Draft
+:page-layout: docs
+:description: CDP Workshop
+:imagesdir: ./images
+:icons: font
+:uri-fontawesome: https://fontawesome.com/v4.7.0/
+
+=== Colophon
+Version: {revnumber}
+: {revdate}
+: {revremark}
+
+=== What
+Cloudera SDX / Security Governance centric workshop using CDP Data Centre 7.0.x.
+
+=== Pre-Requisites (For Instructors)
+. Check for pre-built AMI
++
+|===
+|Region | AMI ID
+
+|eu-central-1
+|ami-0bffb4208f934a678
+|us-west-1
+|ami-0e56b62b00741fc04
+|===
++
+https://github.com/vsellappa/workshop/tree/master/keys[SSH key/pair] to attach to AMI instance.
+
+. Whats included
+.. Single Node CDP 7.0.3
+... Kerberos, for authentication (via local MIT KDC)
+... Ranger, for authorization (via both resource/tag based policies for access and masking)
+... Atlas, for governance (classification/lineage/search)
+... Zeppelin, for running/visualizing Hive queries
+... Hive 3, for Sql access and ACID capabilities
+... HiveWarehouseConnector, for running secure SparkSQL and Kafka queries
+... Hue, for query execution and visualisation
+... DAS, for query execution and visualisation
+
+.. Worldwide Bank Demo/Workshop artifacts
+... Demo hive tables
+... Demo tags/attributes and lineage in Atlas
+... Demo Zeppelin notebooks to walk through demo scenario
+... Ranger policies across HDFS, Hive, Hbase, Kafka, Atlas to showcase:
+... Tag based policies across CDP components
+... Row level security in Hive columns
+... Dynamic tag based masking in Hive columns
+... Hive UDF execution authorization
+... Atlas capabilities like 
+.... Classifications (tags) and attributes
+.... Tag propagation
+.... Data lineage
+.... Business glossary:categories and terms
+.... GDPR Scenarios around consent and data erasure via Hive ACID
+... Hive ACID / MERGE labs
+
+. https://docs.google.com/presentation/d/1z6Vl2USL7FlQmbHUqzWmr-EE9lb9XFKrvcHE3jabDNU/edit?usp=sharing[Slidedeck]
+
+=== Participants 
+. (Optional) If you have been asked to connect via VPN , https://github.com/vsellappa/workshop/blob/master/snippets/CiscoAnyConnectHowTo.adoc[CISCO AnyConnect How-To]
+
+. https://github.com/vsellappa/workshop/tree/master/connect[SSH Access]
+
+. Change the `/etc/hosts` on your desktop
+.. https://gist.github.com/zenorocha/18b10a14b2deb214dc4ce43a2d2e2992[Windows How-To]
+.. Map the given cluster IP Address to `*cdp.cloudera.com*`
+
+. Ensure you can connect to the following services using your browser(Firefox):
++ 
+|===
+|Service | URL | Credentials
+
+|Cloudera Manager
+|http://cdp.cloudera.com:7180/
+|admin/admin
+
+|Ranger
+|http://cdp.cloudera.com:6080/
+|admin/BadPass#1
+
+|Atlas
+|http://cdp.cloudera.com:31000/
+|admin/BadPass#1
+
+|Zeppelin
+|http://cdp.cloudera.com:8885/
+|joe_analyst/BadPass#1, ivanna_eu_hr/BadPass#1, etl_user/BadPass#1 
+|===
++
+NOTE: In some cases you might not be able to login via `cdp.cloudera.com` (due to browser restrictions) , in such cases use the same port with public-dns names.
+
+. Sanity Check
+.. Login to Cloudera Manager and check if all services are green.
++
+[source]
+----
+username: admin
+password: BadPass#1
+----
+
+. <TODO>[Slidedeck]
+
+=== Lab 101
+. Open Zeppelin and login as joe_analyst. Find his notebook by searching for _worldwide_ using the text field under ‘Notebook’ section. Select the notebook called:  *Worldwide Bank - Joe Analyst*
+image:lab101_zeppelin_search.png[]
+
+. On the first launch of the notebook, you will be prompted to choose interpreters. You can keep the defaults but make sure you click Save button.
+image:lab101_zeppelin_interpreters.png[]
+
+. The lab consists of self-explanatory Zeppelin notebooks. This <TODO>[Slidedeck] shows the lab walkthru.
+
+
