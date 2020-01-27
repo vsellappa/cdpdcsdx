@@ -59,9 +59,7 @@ https://github.com/vsellappa/workshop/tree/master/keys[SSH key/pair] to attach t
 
 . https://docs.google.com/presentation/d/1iY2hdV6pP2-obm6D7CFDoD4Wy-WU5UdMIuTIiNUBu7o/edit?usp=sharing[Slidedeck]
 
-=== Participants 
-. (Optional) If you have been asked to connect via VPN , https://github.com/vsellappa/workshop/blob/master/snippets/CiscoAnyConnectHowTo.adoc[CISCO AnyConnect How-To]
-
+=== Participants
 . https://github.com/vsellappa/workshop/tree/master/connect[SSH Access]
 
 . Change the `/etc/hosts` on your desktop
