@@ -57,7 +57,7 @@ https://github.com/vsellappa/workshop/tree/master/keys[SSH key/pair] to attach t
 .... GDPR Scenarios around consent and data erasure via Hive ACID
 ... Hive ACID / MERGE labs
 
-. https://docs.google.com/presentation/d/1z6Vl2USL7FlQmbHUqzWmr-EE9lb9XFKrvcHE3jabDNU/edit?usp=sharing[Slidedeck]
+. https://docs.google.com/presentation/d/1iY2hdV6pP2-obm6D7CFDoD4Wy-WU5UdMIuTIiNUBu7o/edit?usp=sharing[Slidedeck]
 
 === Participants 
 . (Optional) If you have been asked to connect via VPN , https://github.com/vsellappa/workshop/blob/master/snippets/CiscoAnyConnectHowTo.adoc[CISCO AnyConnect How-To]
