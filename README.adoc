@@ -96,7 +96,7 @@ NOTE: In some cases you might not be able to login via `cdp.cloudera.com` (due t
 [source]
 ----
 username: admin
-password: BadPass#1
+password: admin
 ----
 
 . https://github.com/vsellappa/cdpdcsdx/blob/master/Lab101/slides/CDPDc_SDX_Lab101_Workshop_ToShare.pdf[Presentation Deck]
