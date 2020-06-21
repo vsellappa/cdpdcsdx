@@ -13,24 +13,28 @@ Version: {revnumber}
 : {revremark}
 
 === What
-Cloudera SDX / Security Governance centric workshop using CDP Data Centre 7.0.x.
+Cloudera SDX / Security Governance centric workshop using CDP Data Centre 7.x.
 
 === Pre-Requisites (For Instructors)
-. Check for pre-built AMI
+. How to Build the AMI
+.. Start with a centos7 AMI w/o license (e.g. `ami-00846a67` in eu-west-2) using at least m4.4xlarge 100GB disk.
+.. Copy CDF parcels to /root per instructions https://github.com/fabiog1901/SingleNodeCDPCluster#provisioning-cluster-with-trial-parcels[here].
+.. Run below script.
 +
-|===
-|Region | AMI ID
-
-|eu-central-1
-|ami-0bffb4208f934a678
-|us-west-1
-|ami-0e56b62b00741fc04
-|===
+[source, bash]
+----
+curl -sSL https://gist.github.com/abajwa-hw/563f86ef80cc21ba4980767eb02225f3/raw | sudo -E sh
+----
+... Changes the hostname to logical name e.g. cdp.cloudera.com
+... Sets up KDC
+... Updates /etc/rc.local to regen hosts file and start services on boot
+... Runs https://github.com/fabiog1901/SingleNodeCDPCluster[SingleNodeCDP script] to install CDP-DC (including kerberos) and deploys demo
+.. Attach SSH key/pair
 +
 https://github.com/vsellappa/workshop/tree/master/keys[SSH key/pair] to attach to AMI instance.
 
 . Whats included
-.. Single Node CDP 7.0.3
+.. Single Node CDP 7.x
 ... Kerberos, for authentication (via local MIT KDC)
 ... Ranger, for authorization (via both resource/tag based policies for access and masking)
 ... Atlas, for governance (classification/lineage/search)
@@ -58,6 +62,7 @@ https://github.com/vsellappa/workshop/tree/master/keys[SSH key/pair] to attach t
 ... Hive ACID / MERGE labs
 
 . https://docs.google.com/presentation/d/1iY2hdV6pP2-obm6D7CFDoD4Wy-WU5UdMIuTIiNUBu7o/edit?usp=sharing[Slidedeck]
+
 
 === Participants
 . https://github.com/vsellappa/workshop/tree/master/connect[SSH Access]
