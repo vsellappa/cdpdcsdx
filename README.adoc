@@ -61,7 +61,9 @@ https://github.com/vsellappa/workshop/tree/master/keys[SSH key/pair] to attach t
 .... GDPR Scenarios around consent and data erasure via Hive ACID
 ... Hive ACID / MERGE labs
 
+. https://docs.google.com/document/d/1HYrg9djsW3sTd4T9_-DsDI9-4HRqVVPwWNJpfPxVVro/edit?usp=sharing[Agenda To Share]
 . https://docs.google.com/presentation/d/1iY2hdV6pP2-obm6D7CFDoD4Wy-WU5UdMIuTIiNUBu7o/edit?usp=sharing[Slidedeck]
+
 
 
 === Participants
