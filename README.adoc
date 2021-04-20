@@ -115,6 +115,6 @@ image:lab101_zeppelin_search.png[]
 . On the first launch of the notebook, you will be prompted to choose interpreters. You can keep the defaults but make sure you click Save button.
 image:lab101_zeppelin_interpreters.png[]
 
-. Walkthru the workshop via Zeppelin notebooks.
+. https://github.com/vsellappa/cdpdcsdx/blob/master/Lab101/slides/WorldWide%20Bank%20-%20CDP-PvC%20Base%20-%20lab%20guide%20external%20version.pdf[Walkthru the workshop via Zeppelin notebooks]
 
 
